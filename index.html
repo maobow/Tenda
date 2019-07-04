@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tenda | 腾达</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.goup.min.js"></script>
+		<script src="js/holder.js"></script>
+		<script src="js/unslider.min.js"></script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="js/megamenu.js"></script>
+		<script src="js/jquery.scrollAnimations.min.js" ></script>
+		
+		
+	</head>
+
+	<body>
+		<!--顶部导航-->
+		<div class="menu-container">
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="index.html"><img src="img/logo.png" style="width: 80px;" /></a>
+					</li>
+					<li>
+						<a href="html/product01.html">智能家用产品 <span class="glyphicon glyphicon-menu-down"></span></a>
+						<ul>
+							<li>
+								<a href="html/product02.html">穿墙宝</a>
+							</li>
+							<li>
+								<a href="#">路由器</a>
+							</li>
+							<li>
+								<a href="#">无线网卡</a>
+							</li>
+							<li>
+								<a href="#">交换机</a>
+							</li>
+							<li>
+								<a href="#">电力线</a>
+							</li>
+							<li>
+								<a href="#">信号放大器</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">企业商用产品 <span class="glyphicon glyphicon-menu-down"></span></a>
+						<ul>
+							<li>
+								<a href="#">企业交换机</a>
+							</li>
+							<li>
+								<a href="#">企业无线AP</a>
+							</li>
+							<li>
+								<a href="#">企业路由器</a>
+							</li>
+							<li>
+								<a href="#">室外网桥&基站</a>
+							</li>
+							<li>
+								<a href="#">AP控制器</a>
+							</li>
+							<li>
+								<a href="#">综合类</a>
+							</li>
+							<li>
+								<a href="#">智能推荐</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="html/service.html">服务支持 <span class="glyphicon glyphicon-menu-down"></a>
+						<ul>
+							<li>
+								<a href="#">在线客服</a>
+							</li>
+							<li>
+								<a href="#">维修网店</a>
+							</li>
+							<li>
+								<a href="#">软件下载</a>
+							</li>
+							<li>
+								<a href="#">帮助文档</a>
+							</li>
+							<li>
+								<a href="#">视频中心</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">解决方案</a>
+					</li>
+					<li>
+						<a href="#">如何购买</a>
+					</li>
+					<li>
+						<a href="html/about.html">走进腾达</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-globe"></span>区域/语言</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<!-- 图片轮播部分 -->
+		<div class="banner" id="b04">
+			<ul>
+				<li>
+					<img src="img/lunbo1.jpg">
+					<!--<h4>W 1 5 E</h4>
+					<h2>性能新升级 企网专业范儿</h2>
+					<h3>1200M 11AC双频无线路由器</h3>-->
+				</li>
+				<li><img src="img/lunbo2.jpg"></li>
+				<li><img src="img/lunbo3.jpg"></li>
+				<li><img src="img/lunbo4.jpg"></li>
+
+			</ul>
+			<a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="img/arrowl.png" alt="prev"></a>
+			<a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="img/arrowr.png" alt="next"></a>
+		</div>
+
+		<script>
+			//控制轮播
+			$(document).ready(function(e) {
+				var unslider04 = $('#b04').unslider({
+						dots: true
+					}),
+					data04 = unslider04.data('unslider');
+
+				$('.unslider-arrow04').click(function() {
+					var fn = this.className.split(' ')[1];
+					data04[fn]();
+				});
+			});
+		</script>
+
+		<!--中间信息过渡-->
+		<div class="row middle_one">
+			<div class="col-md-4">
+				<img src="img/for1.jpg" />
+				<div class="middle_two">
+					<h5>互联家庭</h5>
+					<p>智能、快速、稳定。连接未来科技，开启智能生活方式</p>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<img src="img/for2.jpg" />
+
+				<div class="middle_two">
+					<h5>企业组网</h5>
+					<p>强信号覆盖和带机能力，满足办公、学校及商场等环境</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="img/for3.jpg" />
+
+				<div class="middle_two">
+					<h5>解决方案</h5>
+					<p>为中小型企业的灵活、可拓展解决方案提供集成组件</p>
+				</div>
+			</div>
+		</div>
+
+		<!--单独商品-->
+
+		<div class="prbanners clearfix">
+			<div class="procatabanner C1 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner">
+						<strong class="c-badge">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">MW5</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">穿墙技术强 覆盖多间房</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 MW5</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods1.png" class=" " alt="MW5"></a>
+				</div>
+			</div>
+			<div class="procatabanner C2 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">MW3</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">免布线自组网 信号覆盖每间房</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 MW3</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods2.png" class=" " alt="MW3"></a>
+				</div>
+			</div>
+			<div class="procatabanner C3 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">AC11</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">强劲五天线 多穿一堵墙</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 AC11</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods3.png" class=" " alt="AC11"></a>
+				</div>
+			</div>
+			<div class="procatabanner C4 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">W15E</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">1200M 11AC双频无线路由器</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 W15E</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods4.png" class=" " alt="W15E"></a>
+				</div>
+			</div>
+			<div class="procatabanner C5 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">TEF1109D</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">为高清监控而生，专为中小型监控设计</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 TEF1109D</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods5.png" class=" " alt="TEF1109D"></a>
+				</div>
+			</div>
+			<div class="procatabanner C6 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">W6-S</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">完美覆盖2间房 酒店、别墅、大户型专用</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 W6-S</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods6.png" class=" " alt="W6-S"></a>
+				</div>
+			</div>
+			<div class="procatabanner C7 " style="color: #fff;">
+				<div class="td-tbpad">
+					<div data-grid="col-12" class="m-banner"><strong class="c-badge   ">全新产品</strong>
+						<h2 class="c-h2-2 " data-animation="fadeInUp">O5</h2>
+						<p class="c-h3-2" data-animation="fadeInUp">2公里稳定带机25个200万高清摄像头</p>
+						<div class="c-group">
+							<a class="iconfont  btngopro  " href="#"><span>了解 O5</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="td-pro  c149 ">
+					<a href="#"><img src="img/goods7.png" class=" " alt="O5"></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--文字效果-->
+			<script>
+				(function() {
+					var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+					$containers.scrollAnimations();
+				}());
+			</script>
+
+		<!--底部栏-->
+		<div class="footer">
+
+			<div class="container">
+				<div class="row ftLeftLinks clearfix">
+					<dl><dt>家用产品<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="html/product02.html">穿墙宝</a>
+						</dd>
+						<dd>
+							<a href="#">路由器</a>
+						</dd>
+						<dd>
+							<a href="#">无线网卡</a>
+						</dd>
+						<dd>
+							<a href="#">交换机</a>
+						</dd>
+						<dd>
+							<a href="#">电力线</a>
+						</dd>
+						<dd>
+							<a href="#">信号放大器</a>
+						</dd>
+						<dd>
+							<a href="#">接入终端</a>
+						</dd>
+						<dd>
+							<a href="#">网络摄像机</a>
+						</dd>
+					</dl>
+					<dl><dt>商用网络<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="#">企业交换机</a>
+						</dd>
+						<dd>
+							<a href="#">企业无线AP</a>
+						</dd>
+						<dd>
+							<a href="#">企业路由器</a>
+						</dd>
+						<dd>
+							<a href="#">室外网桥&amp;基站</a>
+						</dd>
+						<dd>
+							<a href="#">AP控制器</a>
+						</dd>
+						<dd>
+							<a href="#">综合类</a>
+						</dd>
+					</dl>
+					<dl><dt>解决方案<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="#" target="_blank">宾馆无线通</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">企业无线通</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">别墅无线通</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">监控无线通</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">案例中心</a>
+						</dd>
+					</dl>
+					<dl><dt>官方旗舰店<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="#" target="_blank">腾达天猫店</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">腾达京东店</a>
+						</dd>
+						<dd>
+							<a href="#">如何购买？</a>
+						</dd>
+					</dl>
+					<dl><dt>服务支持<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="#" style="cursor:pointer">在线客服</a>
+						</dd>
+						<dd>
+							<a href="#">维修网点</a>
+						</dd>
+						<dd>
+							<a href="#">商用模拟器</a>
+						</dd>
+						<dd>
+							<a href="#">产品保修</a>
+						</dd>
+						<dd>
+							<a href="#">退市声明</a>
+						</dd>
+					</dl>
+					<dl class="hidden-sm"><dt>智能推荐<b class="iconfont icon-readmore"></b></dt>
+						<dd>
+							<a href="#">宾馆无线方案</a>
+						</dd>
+						<dd>
+							<a href="#">企业无线方案</a>
+						</dd>
+						<dd>
+							<a href="#">娱乐无线方案</a>
+						</dd>
+						<dd>
+							<a href="#">别墅无线方案</a>
+						</dd>
+					</dl>
+					<div class="ftHotline">
+						<h4 class="iconfont icon-contact"><a href="tel:400-6622-666" target="_blank"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;400-6622-666</a></h4>
+						<h4><a href="#" onclick="javascript:window.open('//chat8.live800.com/live800/chatClient/chatbox.jsp?companyID=1095808&amp;configID=152877&amp;jid=8122466682&amp;s=1','','width=854,height=600')" style="cursor:pointer" class="ftbtnonline">&nbsp;&nbsp;在线技术客服</a></h4>
+						<p>服务时间段：周一至周日 9:00-12:00 13:30-18:00 (节假日除外)</p>
+					</div>
+				</div>
+				<div class="row  clearfix">
+					<div class="footer-second">
+						<div class="footer-n hidden-xs">
+							<a href="#" class="footer-logo"><img alt="logo" src="img/logo.png"></a>
+							<ul class="nav-right">
+								<li>
+									<a href="#">企业介绍</a>
+								</li>
+								<li>
+									<a href="#">联系我们</a>
+								</li>
+								<li>
+									<a href="#">新闻中心</a>
+								</li>
+								<li class="hidden-sm">
+									<a href="#">发展历程</a>
+								</li>
+								<li>
+									<a href="#">企业视频</a>
+								</li>
+								<li>
+									<a href="#">社会招聘</a>
+								</li>
+								<li>
+									<a href="#">校园招聘</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="footer-info ">
+						<div class="footer-legal">
+							<div class="copyright">版权所有&nbsp;1999-<span id="toyear">2019</span>&nbsp; 深圳市吉祥腾达科技有限公司
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--回到顶部-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.goup({
+					trigger: 100,
+					bottomOffset: 40,
+					locationOffset: 30,
+					titleAsText: true
+				});
+			});
+		</script>
+	</body>
+
+</html>
